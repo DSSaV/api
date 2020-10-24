@@ -1,5 +1,6 @@
 # IMPORTS
 import os
+import json
 
 # SHOW WHAT PATH CONTAINS
 def contains(dirs):
@@ -16,3 +17,8 @@ def serialize_yaml(data):
         return True
     except:
         return False
+    
+# LOAD & SERIALIZE JSON FILE
+def load_json(path):
+    with open(path) as file:
+        return json.load(file)
