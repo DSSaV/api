@@ -8,6 +8,10 @@ import sys
 
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+os.environ["PYTHONWARNINGS"] = "ignore"
+
+import warnings
+warnings.filterwarnings('ignore')
 
 sys.path.insert(1, 'C://Users/35840/desktop/coding/python/pipeline/')
 import ipynb.fs.full.pipeline as notebook
